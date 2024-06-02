@@ -1,0 +1,1 @@
+Описание сервиса: [https://docs.google.com/document/d/1-XRUB14dWIab-9iZ_BQE4LGOxWjMXTc2dq0pMY_ZsV0/edit](https://docs.google.com/document/d/1-XRUB14dWIab-9iZ_BQE4LGOxWjMXTc2dq0pMY_ZsV0/edit?usp=sharing)

@@ -1,6 +1,6 @@
-﻿using ExampleCore.HttpLogic.Services.Interfaces;
+﻿using RentCore.HttpLogic.Services.Interfaces;
 
-namespace ExampleCore.HttpLogic.Services;
+namespace RentCore.HttpLogic.Services;
 
 public record struct HttpConnectionData()
 {

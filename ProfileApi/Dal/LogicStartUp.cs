@@ -9,6 +9,8 @@ public static class DalStartUp
 {
     public static IServiceCollection TryAddDal(this IServiceCollection serviceCollection)
     {
+        serviceCollection.TryAddScoped<IRatingRepository, RatingRepository>();
+        serviceCollection.TryAddScoped<ISessionRepository, SessionRepository>();
         serviceCollection.TryAddScoped<IUserRepository, UserRepository>();
         return serviceCollection;
     }

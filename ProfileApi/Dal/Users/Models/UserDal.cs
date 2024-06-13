@@ -1,4 +1,4 @@
-using ExampleCore.Dal.Base;
+using RentCore.Dal.Base;
 
 namespace ProfileDal.Users.Models;
 

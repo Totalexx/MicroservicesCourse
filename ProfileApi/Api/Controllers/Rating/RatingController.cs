@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProfileApi.Controllers.Rating.Requests;
 using ProfileApi.Controllers.Rating.Responses;
-using ProfileApi.Controllers.User.Requests;
 using ProfileLogic.Users.Interfaces;
 using ProfileLogic.Users.Models;
 
-namespace ProfileApi.Controllers;
+namespace ProfileApi.Controllers.Rating;
 
 [Route("public/rating")]
 public class RatingController : ControllerBase

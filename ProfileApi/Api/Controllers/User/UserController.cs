@@ -1,13 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProfileApi.Controllers.Rating.Requests;
-using ProfileApi.Controllers.Rating.Responses;
 using ProfileApi.Controllers.User.Requests;
 using ProfileApi.Controllers.User.Responses;
-using ProfileDal.Users.Interfaces;
 using ProfileLogic.Users.Interfaces;
 using ProfileLogic.Users.Models;
 
-namespace ProfileApi.Controllers;
+namespace ProfileApi.Controllers.User;
 
 [Route("public/user")]
 public class UserController : ControllerBase
@@ -50,7 +47,7 @@ public class UserController : ControllerBase
         });
     }
     
-    [HttpPost]
+    [HttpPut]
     [ProducesResponseType(200)]
     public async Task<IActionResult> UpdatePasswordAsync([FromBody] UpdatePasswordRequest request)
     {
@@ -63,7 +60,7 @@ public class UserController : ControllerBase
         return isSuccessful ? Ok() : Forbid();
     }
     
-    [HttpPost]
+    [HttpDelete]
     [ProducesResponseType<UserInfoResponse>(200)]
     public async Task<IActionResult> DeleteUserAsync([FromBody] DeleteUserRequest request)
     {

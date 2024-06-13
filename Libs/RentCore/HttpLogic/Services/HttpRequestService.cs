@@ -2,12 +2,11 @@
 using System.Net.Http.Headers;
 using System.Net.Mime;
 using System.Text;
-using CoreLib.HttpServiceV2.Services.Interfaces;
-using ExampleCore.HttpLogic.Services.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using RentCore.HttpLogic.Services.Interfaces;
 
-namespace ExampleCore.HttpLogic.Services;
+namespace RentCore.HttpLogic.Services;
 
 public enum ContentType
 {
